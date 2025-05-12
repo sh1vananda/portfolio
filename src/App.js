@@ -118,7 +118,7 @@ const App = () => {
       {
        company: 'Altibbe Health Pvt. Ltd. | Hyderabad',
        position: 'Blockchain Developer Intern',
-       duration: 'May \'24',
+       duration: 'May \'25',
        responsibilities: [
          'Led blockchain integration as the sole blockchain specialist, implementing end-to-end solutions for Organic certififcation.',
          'Developed smart contract architecture and blockchain gateway system for secure transaction processing and data access.',
