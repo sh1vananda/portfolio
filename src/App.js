@@ -148,9 +148,15 @@ const App = () => {
       {/* Navigation */}
       <nav className={`${darkMode ? 'bg-black border-gray-800' : 'bg-white border-gray-200'} fixed top-0 left-0 right-0 z-50 border-b transition-colors duration-300`}>
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <h2 className={`${darkMode ? 'text-white' : 'text-black'} font-light text-xl transition-colors duration-300`}>
-            Shiva
-          </h2>
+          <div
+            className={`w-8 h-8 rounded-full flex items-center justify-center font-bold transition-colors duration-300 ${
+              darkMode ? 'bg-white text-black' : 'bg-black text-white'
+            }`}
+          >
+            S
+          </div>
+
+
           
           <div className="flex items-center space-x-6">
             {/* Desktop Nav */}
@@ -231,7 +237,7 @@ const App = () => {
       <section id="about" className="pt-24 pb-16 text-center">
         <div className="container mx-auto px-6">
           <img 
-            src="https://placehold.co/200x200/black/white?text=SRK " 
+            src="me.JPG" 
             alt="Profile" 
             className={`mx-auto w-32 h-32 rounded-full object-cover mb-8 border ${darkMode ? 'border-gray-700' : 'border-gray-300'}`}
           />
@@ -457,9 +463,10 @@ const App = () => {
       </main>
 
       {/* Footer */}
-      <footer className={`${darkMode ? 'bg-black border-gray-800' : 'bg-white border-gray-200'} border-t py-8 text-center text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-        © {new Date().getFullYear()} Shivananda Reddy Kankanala. All rights reserved.
-      </footer>
+      {/* <footer className={`${darkMode ? 'bg-black border-gray-800 text-white' : 'bg-white border-gray-200 text-black'} border-t py-8 text-center text-sm transition-colors duration-300`}>
+        Shivananda Reddy Kankanala
+      </footer> */}
+
     </div>
   );
 };
