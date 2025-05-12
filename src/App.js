@@ -118,7 +118,7 @@ const App = () => {
       {
        company: 'Altibbe Health Pvt. Ltd. | Hyderabad',
        position: 'Blockchain Developer Intern',
-       duration: 'May 2024 – Aug 2024',
+       duration: 'May \'24',
        responsibilities: [
          'Led blockchain integration as the sole blockchain specialist, implementing end-to-end solutions for Organic certififcation.',
          'Developed smart contract architecture and blockchain gateway system for secure transaction processing and data access.',
@@ -128,7 +128,7 @@ const App = () => {
      {
        company: 'TimeSlotter Technologies | Vellore',
        position: 'Software Development Intern',
-       duration: 'Oct 2023 – Dec 2023',
+       duration: 'Oct \'24 – Dec \'24',
        responsibilities: [
          'Identified and resolved performance bottlenecks through code optimization, contributing to 99.9% service uptime.',
          'Performed performance profiling to optimize mobile features, reducing CPU usage by 40% and improving user experience.',
