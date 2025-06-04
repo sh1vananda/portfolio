@@ -140,17 +140,17 @@ const App = () => {
       {
        name: 'Rust Microkernel',
        technologies: ['Rust', 'x86 Assembly'],
-       description: 'A memory-safe, capability-based microkernel for x86 featuring fast IPC, zero-copy lock-free data handling, and optimized isolation with minimal TCB. <a href="https://github.com/sh1vananda/rust-microkernel" target="_blank" rel="noopener noreferrer">link</a>'
+       description: 'A memory-safe, capability-based microkernel for x86 featuring fast IPC, zero-copy lock-free data handling, and optimized isolation with minimal TCB.'
      },
       {
        name: 'Path Tracer',
        technologies: ['Rust'],
-       description: 'Monte Carlo physically-based renderer in Rust with global illumination, parallelized rendering, and modular, trait-based extensibility. <a href="https://github.com/sh1vananda/rust-path-tracer" target="_blank" rel="noopener noreferrer">link</a>'
+       description: 'Monte Carlo physically-based renderer in Rust with global illumination, parallelized rendering, and modular, trait-based extensibility.'
      },
       {
        name: 'Kiwi – Hyperlocal Chat Application',
        technologies: ['Node.js', 'Flutter', 'Firestore'],
-       description: 'Real-time geospatial chat app enabling users in nearby H3-indexed zones to connect. Replaced client-heavy processing with custom server-side geospatial APIs, cutting API latency by 60%. <a href="https://github.com/sh1vananda/kiwi-hyperlocal-chat" target="_blank" rel="noopener noreferrer">link</a>'
+       description: 'Real-time geospatial chat app enabling users in nearby H3-indexed zones to connect. Replaced client-heavy processing with custom server-side geospatial APIs, cutting API latency by 60%.'
      },
      {
        name: 'sustAIn – AI for Sustainable Materials Design',
