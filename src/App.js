@@ -140,17 +140,17 @@ const App = () => {
       {
        name: 'Rust Microkernel',
        technologies: ['Rust', 'x86 Assembly'],
-       description: 'A memory-safe, capability-based microkernel for x86 featuring fast IPC, zero-copy lock-free data handling, and optimized isolation with minimal TCB.'
+       description: 'A memory-safe, capability-based microkernel for x86 featuring fast IPC, zero-copy lock-free data handling, and optimized isolation with minimal TCB. <a href="https://github.com/sh1vananda/rust-microkernel" target="_blank" rel="noopener noreferrer">link</a>'
      },
       {
        name: 'Path Tracer',
        technologies: ['Rust'],
-       description: 'Monte Carlo physically-based renderer in Rust with global illumination, parallelized rendering, and modular, trait-based extensibility.'
+       description: 'Monte Carlo physically-based renderer in Rust with global illumination, parallelized rendering, and modular, trait-based extensibility. <a href="https://github.com/sh1vananda/rust-path-tracer" target="_blank" rel="noopener noreferrer">link</a>'
      },
       {
        name: 'Kiwi – Hyperlocal Chat Application',
        technologies: ['Node.js', 'Flutter', 'Firestore'],
-       description: 'Real-time geospatial chat app enabling users in nearby H3-indexed zones to connect. Replaced client-heavy processing with custom server-side geospatial APIs, cutting API latency by 60%.'
+       description: 'Real-time geospatial chat app enabling users in nearby H3-indexed zones to connect. Replaced client-heavy processing with custom server-side geospatial APIs, cutting API latency by 60%. <a href="https://github.com/sh1vananda/kiwi-hyperlocal-chat" target="_blank" rel="noopener noreferrer">link</a>'
      },
      {
        name: 'sustAIn – AI for Sustainable Materials Design',
@@ -170,7 +170,7 @@ const App = () => {
      {
        name: 'Elqen – Decentralized Rotating Savings & Credit System',
        technologies: ['Python', 'PostgreSQL', 'Sveltekit', 'Web3.js'],
-       description: 'Solidity-based ROSCA system with automated fund allocation, React frontend with wallet integration, and OpenZeppelin-secured smart contracts ensuring transactional integrity and real-time group contribution tracking.'
+       description: 'Solidity-based ROSCA system with automated fund allocation, React frontend with wallet integration, and OpenZeppelin-secured smart contracts ensuring transactional integrity and real-time group contribution tracking. <a href="https://github.com/sh1vananda/elqen" target="_blank" rel="noopener noreferrer">link</a>'
      },
      {
        name: 'Dynamic NFT System',
