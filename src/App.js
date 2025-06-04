@@ -3,22 +3,14 @@ import React, { useState, useEffect } from 'react';
 const App = () => {
   const [activeSection, setActiveSection] = useState('about');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // Re-introduce darkMode state, default to light mode (false)
   const [darkMode, setDarkMode] = useState(false);
 
-  // Define colors based on mode
   const bgColor = darkMode ? 'bg-black' : 'bg-white';
   const textColor = darkMode ? 'text-white' : 'text-black';
-  // --- BORDER COLOR IS NOW CONSTANT ---
-  const borderColor = 'border-gray-600'; // Grey border for both modes
-  // --- END OF CHANGE ---
+  const borderColor = 'border-gray-600';
   const inverseBgColor = darkMode ? 'bg-white' : 'bg-black';
   const inverseTextColor = darkMode ? 'text-black' : 'text-white';
-  // Define an inverse border color for specific elements if needed,
-  // but primary button will use border-black for contrast.
-  // const inverseBorderColor = darkMode ? 'border-black' : 'border-white'; // Example if needed elsewhere
-
-  // Handle section navigation (no changes needed here)
+  
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -30,7 +22,6 @@ const App = () => {
     }
   };
 
-  // Update active section based on scroll position (no changes needed here)
   useEffect(() => {
     const sections = ['about', 'education', 'skills', 'experience', 'projects', 'certifications', 'leadership', 'contact'];
     let sectionElements = {};
@@ -68,15 +59,14 @@ const App = () => {
     };
 
     window.addEventListener('scroll', debouncedScrollHandler, { passive: true });
-    handleScroll(); // Initial check
+    handleScroll();
 
     return () => {
       clearTimeout(scrollTimeout);
       window.removeEventListener('scroll', debouncedScrollHandler);
     };
-  }, []); // Empty dependency array
+  }, []);
 
-  // Navigation links (no changes needed here)
   const navLinks = [
     { id: 'about', label: 'About' },
     { id: 'education', label: 'Education' },
@@ -92,9 +82,9 @@ const App = () => {
   const resumeData = { /* ... resume data ... */ };
    resumeData.name = 'Shivananda Reddy Kankanala';
    resumeData.title = 'Full-Stack Blockchain Developer';
-   resumeData.summary = 'Blockchain-focused Software Developer with practical experience in decentralized applications and full-stack development. Proficient in JavaScript, Python, Flutter, Solidity, Web3 technologies, and SQL databases. Demonstrated ability to develop blockchain solutions, optimize system performance, and build scalable applications.';
+   resumeData.summary = 'Blockchain-focused Software Developer with practical experience in decentralized applications and full-stack development. Proficient in Python, Rust, Typescript, JavaScript, Flutter, Solidity, Web3 technologies, and SQL databases. Demonstrated ability to develop blockchain solutions, optimize system performance, and build scalable applications.';
    resumeData.contact = {
-     email: 'shivanandareddy.kankanala@example.com',
+     email: 'shivanandareddy.kankanala@gmail.com',
      phone: '+91-6303032825',
      linkedin: 'https://www.linkedin.com/in/shivananda-reddy-kankanala/',
      github: 'https://github.com/sh1vananda'
@@ -106,10 +96,10 @@ const App = () => {
      graduationDate: 'May 2025'
    };
    resumeData.skills = {
-     languages: ['Python', 'JavaScript', 'TypeScript', 'Solidity', 'SQL', 'HTML', 'CSS'],
-     blockchain: ['Ethereum', 'Web3.js', 'Ethers.js', 'Hyperledger Fabric', 'Smart Contracts', 'ERC Standards'],
-     backend: ['Node.js', 'Express.js', 'Django', 'GraphQL'],
-     frontend: ['React.js', 'Svelte', 'Web3 UI libraries'],
+     languages: ['Python', 'Rust', 'JavaScript', 'TypeScript', 'Dart', 'Go', 'SQL', 'HTML', 'CSS'],
+     blockchain: ['Solidity', 'Ethereum', 'Web3.js', 'Ethers.js', 'Hyperledger Fabric', 'OpenZeppelin', 'ERC Standards'],
+     backend: ['Node.js', 'Django', 'FastAPI', 'Flask', 'GraphQL'],
+     frontend: ['Flutter', 'React.js', 'Svelte', 'Web3 UI libraries'],
      databases: ['PostgreSQL', 'MongoDB', 'MySQL', 'IPFS'],
      devTools: ['Git', 'Docker', 'Hardhat', 'Foundry', 'Truffle', 'Postman',],
      "AI/Ml": ['TensorFlow', 'PyTorch', 'Scikit-learn', 'GNN', 'VAE', "NSGA-III", 'XGBoost', 'SHAP', "Reinforcement Learning"],
@@ -120,52 +110,77 @@ const App = () => {
        position: 'Blockchain Developer Intern',
        duration: 'May \'25',
        responsibilities: [
-         'Led blockchain integration as the sole blockchain specialist, implementing end-to-end solutions for Organic certififcation.',
-         'Developed smart contract architecture and blockchain gateway system for secure transaction processing and data access.',
-         'Collaborated with cross-functional teams to align blockchain implementations with business requirements and regulatory standards.'
+         'Developed gas-efficient Solidity smart contracts for EVM-based certification, enabling tamper-proof, transparent audits',
+         'Designed and implemented an on-chain audit system for verifiable, immutable process tracking.',
+         'Built a secure Node.js API gateway to integrate real-time blockchain logic with legacy infrastructure.'
        ]
      },
      {
        company: 'TimeSlotter Technologies | Vellore',
-       position: 'Software Development Intern',
+       position: 'Frontend Developer Intern',
        duration: 'Oct \'24 – Dec \'24',
        responsibilities: [
-         'Identified and resolved performance bottlenecks through code optimization, contributing to 99.9% service uptime.',
-         'Performed performance profiling to optimize mobile features, reducing CPU usage by 40% and improving user experience.',
-         'Engineered REST API integrations with robust error handling and data validation mechanisms for reliable service delivery.'
+         'Delivered high-fidelity Flutter UIs from Figma, achieving 98% design match and reducing CPU usage by 40%.',
+         'Integrated 10+ REST APIs using Dio with robust error handling and maintained 99.9% app uptime.',
+         'Increased user retention by 35% through optimized Riverpod state management and custom UI animations.'
+       ]
+     },
+     {
+       company: 'Flixdin | Vellore',
+       position: 'Full Stack Developer Intern',
+       duration: 'May \'24 – Jul \'24',
+       responsibilities: [
+         'Enhanced Android app features and user experience using Kotlin, focusing on UI performance and responsiveness.',
+         'Integrated REST APIs for dynamic content delivery and collaborated with backend teams on API contracts.',
+         'Performed QA testing, Diagnosed and resolved bugs, improving app stability and reliability.'
        ]
      }
    ];
     resumeData.projects = [
-     {
+      {
+       name: 'Rust Microkernel',
+       technologies: ['Rust', 'x86 Assembly'],
+       description: 'A memory-safe, capability-based microkernel for x86 featuring fast IPC, zero-copy lock-free data handling, and optimized isolation with minimal TCB.'
+     },
+      {
+       name: 'Path Tracer',
+       technologies: ['Rust'],
+       description: 'Monte Carlo physically-based renderer in Rust with global illumination, parallelized rendering, and modular, trait-based extensibility.'
+     },
+      {
        name: 'Kiwi – Hyperlocal Chat Application',
        technologies: ['Node.js', 'Flutter', 'Firestore'],
-       description: 'Created a real-time geospatial chat app enabling users in nearby zones to connect. Replaced client-heavy processing with custom server-side geospatial APIs, cutting API latency by 60%.'
+       description: 'Real-time geospatial chat app enabling users in nearby H3-indexed zones to connect. Replaced client-heavy processing with custom server-side geospatial APIs, cutting API latency by 60%.'
      },
      {
-       name: 'sustAIn: AI for Sustainable Materials Design',
+       name: 'sustAIn – AI for Sustainable Materials Design',
        technologies: ['Python', 'PyTorch', 'GNN', 'VAE', 'NSGA-III'],
-       description: 'Built a GNN-VAE hybrid model with NSGA-III optimization to generate new material compositions. Automated the pipeline from molecular structure analysis to sustainability-driven design proposals.'
+       description: 'Framework for sustainable material design using GNN/VAE models with NSGA-III-based multi-objective optimization over cost, performance, and environmental impact, enabling accurate property prediction and novel candidate generation.'
      },
      {
        name: 'PCOS Diagnosis using Machine Learning',
        technologies: ['Python', 'TensorFlow', 'Scikit-learn', 'XGBoost'],
-       description: 'Developed a predictive tool for diagnosing PCOS with 98% accuracy using deep learning. Applied ensemble learning, SHAP-based interpretability, and hyperparameter tuning for robust model performance.'
+       description: 'A predictive tool for diagnosing PCOS with 98% accuracy using deep learning. Applied ensemble learning, SHAP-based interpretability, and hyperparameter tuning for robust model performance.'
      },
      {
        name: 'Blockchain Price Alert System',
        technologies: ['Python', 'PostgreSQL', 'Sveltekit', 'Web3.js'],
-       description: 'Built a full-stack price alert platform for cryptocurrency users. Designed efficient backend pipelines to process high-frequency exchange API data and trigger real-time user alerts based on custom price rules.'
+       description: 'A full-stack price alert platform for cryptocurrency users. Designed efficient backend pipelines to process high-frequency exchange API data and trigger real-time user alerts based on custom price rules.'
+     },
+     {
+       name: 'Elqen – Decentralized Rotating Savings & Credit System',
+       technologies: ['Python', 'PostgreSQL', 'Sveltekit', 'Web3.js'],
+       description: 'Solidity-based ROSCA system with automated fund allocation, React frontend with wallet integration, and OpenZeppelin-secured smart contracts ensuring transactional integrity and real-time group contribution tracking.'
      },
      {
        name: 'Dynamic NFT System',
        technologies: ['Solidity', 'React.js', 'Chainlink', 'IPFS'],
-       description: 'Engineered dynamic NFTs that evolve based on real-world data using Chainlink oracles. Developed smart contracts in Solidity and integrated a React frontend for minting and managing tokens with metadata on IPFS.'
+       description: 'Dynamic NFTs that evolve based on real-world data using Chainlink oracles. Developed smart contracts in Solidity and integrated a React frontend for minting and managing tokens with metadata on IPFS.'
      },
      {
        name: 'Supply Chain Management on Blockchain',
        technologies: ['Hyperledger Fabric', 'Node.js', 'Express'],
-       description: 'Implemented a blockchain-based asset tracking system using Hyperledger Fabric. Wrote chaincode to enforce business logic and built Express APIs to interact with the ledger and visualize asset history.'
+       description: 'Blockchain-based asset tracking system using Hyperledger Fabric, Chaincode to enforce business logic and built Express APIs to interact with the ledger and visualize asset history.'
      }
    ];
    resumeData.certifications = [
@@ -179,13 +194,9 @@ const App = () => {
    };
 
   return (
-    // Apply base theme colors to the root
-    <div className={`${bgColor} ${textColor} min-h-screen font-sans transition-colors duration-300`}> {/* Added transition */}
-      {/* Navigation */}
-      {/* Use theme bg and the constant grey border */}
+    <div className={`${bgColor} ${textColor} min-h-screen font-sans transition-colors duration-300`}>
       <nav className={`${bgColor} ${borderColor} fixed top-0 left-0 right-0 z-50 border-b transition-colors duration-300`}>
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          {/* Initials Logo - Inverts with theme */}
           <div
             className={`w-8 h-8 rounded-full flex items-center justify-center font-bold ${inverseBgColor} ${inverseTextColor} transition-colors duration-300`}
           >
@@ -193,18 +204,16 @@ const App = () => {
           </div>
 
           <div className="flex items-center space-x-4">
-            {/* Desktop Nav */}
             <ul className="hidden md:flex space-x-6">
               {navLinks.map(link => (
                 <li key={link.id}>
                   <button
                     onClick={() => scrollToSection(link.id)}
-                    // Use theme text color. Active/hover uses the constant grey border.
                     className={`text-sm font-light pb-1 border-b ${textColor} ${
                       activeSection === link.id
-                        ? `${borderColor}` // Active border is grey
-                        : 'border-transparent' // Inactive has no visible border
-                    } hover:${borderColor} transition-colors duration-300`} // Hover adds grey border
+                        ? `${borderColor}` 
+                        : 'border-transparent' 
+                    } hover:${borderColor} transition-colors duration-300`} 
                   >
                     {link.label}
                   </button>
@@ -212,29 +221,22 @@ const App = () => {
               ))}
             </ul>
 
-            {/* --- Dark Mode Toggle RE-ADDED --- */}
             <button
               onClick={() => setDarkMode(!darkMode)}
-              // Button background/text inverts the main theme
               className={`p-2 rounded-full ${inverseBgColor} ${inverseTextColor} hover:opacity-80 transition-colors duration-300`}
               aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
             >
-              {/* Simple B/W Icons */}
               {darkMode ? (
-                // Sun Icon (Simple) - Inherits inverseTextColor
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9 2a1 1 0 011-1h0a1 1 0 011 1v1a1 1 0 01-2 0V2zm0 15a1 1 0 011-1h0a1 1 0 011 1v1a1 1 0 01-2 0v-1zm6.364-11.364a1 1 0 011.414 0l.707.707a1 1 0 010 1.414l-.707.707a1 1 0 01-1.414 0l-.707-.707a1 1 0 010-1.414l.707-.707zm-9.9 9.9a1 1 0 011.414 0l.707.707a1 1 0 010 1.414l-.707.707a1 1 0 01-1.414 0l-.707-.707a1 1 0 010-1.414l.707-.707zM18 9a1 1 0 01-1 1h-1a1 1 0 010-2h1a1 1 0 011 1zm-16 0a1 1 0 01-1 1H1a1 1 0 010-2h1a1 1 0 011 1zm10.364-.364a1 1 0 010 1.414l-.707.707a1 1 0 01-1.414 0l-.707-.707a1 1 0 010-1.414l.707-.707a1 1 0 011.414 0zM6.05 13.95a1 1 0 010 1.414l-.707.707a1 1 0 01-1.414 0l-.707-.707a1 1 0 010-1.414l.707-.707a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
               ) : (
-                // Moon Icon (Simple) - Inherits inverseTextColor
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
                 </svg>
               )}
             </button>
-            {/* --- END OF TOGGLE --- */}
-
-            {/* Mobile Menu Button - Use theme text color */}
+              
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`md:hidden ${textColor} p-1 transition-colors duration-300`}
@@ -250,20 +252,17 @@ const App = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {isMenuOpen && (
-          // Use theme bg and constant grey border
           <div className={`${bgColor} ${borderColor} border-t shadow-md md:hidden transition-colors duration-300`}>
             <ul className="flex flex-col p-4 space-y-1">
               {navLinks.map(link => (
                 <li key={link.id}>
                   <button
                     onClick={() => scrollToSection(link.id)}
-                    // Active uses inverse colors, inactive uses theme colors. Hover uses inverse colors.
                     className={`block w-full text-left px-3 py-2 rounded-sm transition-colors duration-150 ${
                       activeSection === link.id
-                        ? `${inverseBgColor} ${inverseTextColor}` // Active highlights with inverse colors
-                        : `${textColor} hover:${inverseBgColor} hover:${inverseTextColor}` // Hover uses inverse colors
+                        ? `${inverseBgColor} ${inverseTextColor}` 
+                        : `${textColor} hover:${inverseBgColor} hover:${inverseTextColor}`
                     }`}
                   >
                     {link.label}
@@ -275,16 +274,13 @@ const App = () => {
         )}
       </nav>
 
-      {/* Hero Section */}
       <section id="about" className="pt-28 pb-16 text-center">
         <div className="container mx-auto px-6">
           <img
             src="me.JPG"
             alt="Profile"
-            // Use constant grey border
             className={`mx-auto w-32 h-32 rounded-full object-cover mb-8 border-2 ${borderColor} transition-colors duration-300`}
           />
-          {/* Use theme text color */}
           <h1 className={`text-4xl md:text-5xl font-light mb-4 tracking-tight ${textColor} transition-colors duration-300`}>
             {resumeData.name}
           </h1>
@@ -295,14 +291,12 @@ const App = () => {
             {resumeData.summary}
           </p>
           <div className="flex justify-center space-x-4">
-            {/* Primary button: Inverted colors, BLACK border for contrast */}
             <button
               onClick={() => scrollToSection('contact')}
               className={`px-6 py-3 border ${inverseBgColor} ${inverseTextColor} border-black hover:opacity-80 transition-colors duration-300`} // Explicit black border
             >
               Contact Info
             </button>
-            {/* Secondary button: Theme colors, constant GREY border */}
             <button
               onClick={() => scrollToSection('projects')}
               className={`px-6 py-3 border ${borderColor} ${textColor} ${bgColor} hover:${inverseBgColor} hover:${inverseTextColor} transition-colors duration-300`} // Hover inverts bg/text, border stays grey
@@ -315,9 +309,6 @@ const App = () => {
 
       <main className="container mx-auto px-6">
 
-        {/* --- Sections now use theme colors and constant grey border --- */}
-
-        {/* Education Section */}
         <section id="education" className="py-12">
           <h2 className={`text-3xl font-light mb-6 ${textColor} transition-colors duration-300`}>
             Education
@@ -330,7 +321,6 @@ const App = () => {
           </div>
         </section>
 
-        {/* Skills Section */}
         <section id="skills" className="py-12">
           <h2 className={`text-3xl font-light mb-6 ${textColor} transition-colors duration-300`}>
             Technical Skills
@@ -343,7 +333,6 @@ const App = () => {
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {items.map((skill, i) => (
-                    // Tags: Use theme colors and constant grey border
                     <span key={i} className={`text-sm ${borderColor} ${textColor} ${bgColor} px-3 py-1 rounded-full border transition-colors duration-300`}>
                       {skill}
                     </span>
@@ -354,7 +343,6 @@ const App = () => {
           </div>
         </section>
 
-        {/* Experience Section */}
         <section id="experience" className="py-12">
           <h2 className={`text-3xl font-light mb-6 ${textColor} transition-colors duration-300`}>
             Professional Experience
@@ -380,13 +368,11 @@ const App = () => {
           </div>
         </section>
 
-        {/* Projects Section */}
         <section id="projects" className="py-12">
           <h2 className={`text-3xl font-light mb-6 ${textColor} transition-colors duration-300`}>
             Projects
           </h2>
           <div className="mt-6">
-            {/* Add simple scrollbar styling adaptable to theme (optional) */}
             <div className={`flex overflow-x-auto space-x-6 pb-4 ${darkMode ? 'scrollbar-dark' : 'scrollbar-light'}`}>
               {resumeData.projects.map((project, index) => (
                 <div
@@ -406,7 +392,6 @@ const App = () => {
           </div>
         </section>
 
-        {/* Certifications Section */}
         <section id="certifications" className="py-12">
           <h2 className={`text-3xl font-light mb-6 ${textColor} transition-colors duration-300`}>
             Certifications
@@ -415,7 +400,6 @@ const App = () => {
             <ul className="space-y-3">
               {resumeData.certifications.map((cert, idx) => (
                 <li key={idx} className="flex items-start">
-                  {/* Icon uses theme text color */}
                   <svg className={`w-5 h-5 mr-2 mt-1 flex-shrink-0 ${textColor} transition-colors duration-300`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                   </svg>
@@ -426,7 +410,6 @@ const App = () => {
           </div>
         </section>
 
-        {/* Leadership Section */}
         <section id="leadership" className="py-12">
           <h2 className={`text-3xl font-light mb-6 ${textColor} transition-colors duration-300`}>
             Leadership & Initiatives
@@ -439,7 +422,6 @@ const App = () => {
           </div>
         </section>
 
-        {/* Contact Info Section */}
         <section id="contact" className="py-12">
           <h2 className={`text-3xl font-light mb-6 ${textColor} transition-colors duration-300`}>
             Contact Info
@@ -447,7 +429,6 @@ const App = () => {
           <div className={`${bgColor} ${textColor} p-6 rounded-lg border ${borderColor} transition-colors duration-300`}>
               <h3 className="text-xl font-light mb-4">Connect With Me</h3>
               <ul className="space-y-4">
-                {/* Icons and text use theme text color */}
                 <li className="flex items-center">
                   <svg className={`w-5 h-5 mr-3 flex-shrink-0 ${textColor} transition-colors duration-300`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
