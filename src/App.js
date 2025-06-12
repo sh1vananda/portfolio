@@ -148,9 +148,24 @@ const App = () => {
        description: 'Monte Carlo physically-based renderer in Rust with global illumination, parallelized rendering, and modular, trait-based extensibility.'
      },
       {
+       name: 'ls-pro',
+       technologies: ['Rust'],
+       description: 'Modern ls replacement written in Rust. Supports recursive tree view (--tree), Git status integration (--git), .gitignore awareness, directory size calculation (--calculate-sizes), and a clean, developer-oriented layout. Designed for speed and usability.'
+     },
+      {
        name: 'Kiwi – Hyperlocal Chat Application',
        technologies: ['Node.js', 'Flutter', 'Firestore'],
        description: 'Real-time geospatial chat app enabling users in nearby H3-indexed zones to connect. Replaced client-heavy processing with custom server-side geospatial APIs, cutting API latency by 60%.'
+     },
+      {
+       name: 'Do Doing Done',
+       technologies: ['Flask', 'JavaScript', 'TailwindCSS', 'SocketIO'],
+       description: 'A real-time task management application built with Flask and SocketIO. Supports room-based collaboration with unique room codes. Features include real-time synchronization, a three-column Kanban board (To Do, In Progress, Done), drag-and-drop task movement, inline editing, task assignment, priority levels, and due dates.'
+     },
+      {
+       name: 'atra',
+       technologies: ['Next.js', 'TailwindCSS', 'Firestore'],
+       description: 'a digital loyalty platform enabling customers to collect and redeem points across businesses via a unified wallet. Businesses can create and manage loyalty programs, track activity, and access analytics through a dedicated dashboard. Supports QR-based point collection, reward redemption, and activity history.'
      },
      {
        name: 'sustAIn – AI for Sustainable Materials Design',
@@ -164,13 +179,13 @@ const App = () => {
      },
      {
        name: 'Blockchain Price Alert System',
-       technologies: ['Python', 'PostgreSQL', 'Sveltekit', 'Web3.js'],
+       technologies: ['Python', 'PostgreSQL', 'Sveltekit', 'TailwindCSS', 'Web3.js'],
        description: 'A full-stack price alert platform for cryptocurrency users. Designed efficient backend pipelines to process high-frequency exchange API data and trigger real-time user alerts based on custom price rules.'
      },
      {
        name: 'Elqen – Decentralized Rotating Savings & Credit System',
        technologies: ['Python', 'PostgreSQL', 'Sveltekit', 'Web3.js'],
-       description: 'Solidity-based ROSCA system with automated fund allocation, React frontend with wallet integration, and OpenZeppelin-secured smart contracts ensuring transactional integrity and real-time group contribution tracking. <a href="https://github.com/sh1vananda/elqen" target="_blank" rel="noopener noreferrer">link</a>'
+       description: 'Solidity-based ROSCA system with automated fund allocation, React frontend with wallet integration, and OpenZeppelin-secured smart contracts ensuring transactional integrity and real-time group contribution tracking.'
      },
      {
        name: 'Dynamic NFT System',
@@ -179,7 +194,7 @@ const App = () => {
      },
      {
        name: 'Supply Chain Management on Blockchain',
-       technologies: ['Hyperledger Fabric', 'Node.js', 'Express'],
+       technologies: ['Chaincode (Go)', 'Hyperledger Fabric', 'Node.js', 'Express'],
        description: 'Blockchain-based asset tracking system using Hyperledger Fabric, Chaincode to enforce business logic and built Express APIs to interact with the ledger and visualize asset history.'
      }
    ];
