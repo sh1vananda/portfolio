@@ -81,7 +81,7 @@ const App = () => {
   // Resume data (unchanged)
   const resumeData = { /* ... resume data ... */ };
    resumeData.name = 'Shivananda Reddy Kankanala';
-   resumeData.title = 'Full-Stack Blockchain Developer';
+   resumeData.title = 'Full-Stack Developer';
    resumeData.summary = 'Blockchain-focused Software Developer with practical experience in decentralized applications and full-stack development. Proficient in Python, Rust, Typescript, JavaScript, Flutter, Solidity, Web3 technologies, and SQL databases. Demonstrated ability to develop blockchain solutions, optimize system performance, and build scalable applications.';
    resumeData.contact = {
      email: 'shivanandareddy.kankanala@gmail.com',
