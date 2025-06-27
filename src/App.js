@@ -158,29 +158,39 @@ const App = () => {
        description: 'Real-time geospatial chat app enabling users in nearby H3-indexed zones to connect. Replaced client-heavy processing with custom server-side geospatial APIs, cutting API latency by 60%.'
      },
       {
-       name: 'Do Doing Done',
+       name: 'Do Doing Done - Collaborative Task Manager',
        technologies: ['Flask', 'JavaScript', 'TailwindCSS', 'SocketIO'],
        description: 'A real-time task management application built with Flask and SocketIO. Supports room-based collaboration with unique room codes. Features include real-time synchronization, a three-column Kanban board (To Do, In Progress, Done), drag-and-drop task movement, inline editing, task assignment, priority levels, and due dates.'
      },
       {
-       name: 'atra',
+       name: 'Atra - Digital Loyalty Platform',
        technologies: ['Next.js', 'TailwindCSS', 'Firestore'],
        description: 'a digital loyalty platform enabling customers to collect and redeem points across businesses via a unified wallet. Businesses can create and manage loyalty programs, track activity, and access analytics through a dedicated dashboard. Supports QR-based point collection, reward redemption, and activity history.'
      },
-     {
-       name: 'sustAIn – AI for Sustainable Materials Design',
-       technologies: ['Python', 'PyTorch', 'GNN', 'VAE', 'NSGA-III'],
-       description: 'Framework for sustainable material design using GNN/VAE models with NSGA-III-based multi-objective optimization over cost, performance, and environmental impact, enabling accurate property prediction and novel candidate generation.'
+      {
+       name: 'Wiki Deck',
+       technologies: ['HTMX', 'JavaScript', 'CSS3', 'Python (Flask)'],
+       description: 'A server-driven Wikipedia article explorer that delivers a seamless, swipe-based browsing experience without relying on client-side frameworks. It uses dynamic HTML fragment updates and session-backed state management to handle navigation history. Fully responsive, designed with a mobile-first layout strategy, and optimized for low-latency interactions. The platform is deployed in a stateless, serverless environment, ensuring scalable performance with minimal overhead.'
      },
-     {
+      {
+       name: 'Headless Movie Review PLatform',
+       technologies: ['React', 'Next.js', 'Sanity.io', 'TailwindCSS'],
+       description: 'A statically-generated review platform with a custom content backend, supporting detailed schemas for reviews, genres, and analytical metrics like Visual Fingerprint and Boo Gauge. Integrated animated visualizations to display review data and implemented a recommendation engine based on Euclidean distance between content vectors. Managed dual deployment pipelines with automated content sync for both the frontend and the headless CMS.'
+     },
+      {
+       name: 'Blockchain Price Alert System',
+       technologies: ['Python', 'PostgreSQL', 'Sveltekit', 'TailwindCSS', 'Web3.js'],
+       description: 'A full-stack price alert platform for cryptocurrency users. Designed efficient backend pipelines to process high-frequency exchange API data and trigger real-time user alerts based on custom price rules.'
+     },
+      {
        name: 'PCOS Diagnosis using Machine Learning',
        technologies: ['Python', 'TensorFlow', 'Scikit-learn', 'XGBoost'],
        description: 'A predictive tool for diagnosing PCOS with 98% accuracy using deep learning. Applied ensemble learning, SHAP-based interpretability, and hyperparameter tuning for robust model performance.'
      },
      {
-       name: 'Blockchain Price Alert System',
-       technologies: ['Python', 'PostgreSQL', 'Sveltekit', 'TailwindCSS', 'Web3.js'],
-       description: 'A full-stack price alert platform for cryptocurrency users. Designed efficient backend pipelines to process high-frequency exchange API data and trigger real-time user alerts based on custom price rules.'
+       name: 'sustAIn – AI for Sustainable Materials Design',
+       technologies: ['Python', 'PyTorch', 'GNN', 'VAE', 'NSGA-III'],
+       description: 'Framework for sustainable material design using GNN/VAE models with NSGA-III-based multi-objective optimization over cost, performance, and environmental impact, enabling accurate property prediction and novel candidate generation.'
      },
      {
        name: 'Elqen – Decentralized Rotating Savings & Credit System',
