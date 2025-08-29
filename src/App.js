@@ -96,13 +96,12 @@ const App = () => {
      graduationDate: 'May 2025'
    };
    resumeData.skills = {
-     languages: ['Python', 'Rust', 'JavaScript', 'TypeScript', 'Dart', 'Go', 'SQL', 'HTML', 'CSS'],
-     blockchain: ['Solidity', 'Ethereum', 'Web3.js', 'Ethers.js', 'Hyperledger Fabric', 'OpenZeppelin', 'ERC Standards'],
-     backend: ['Node.js', 'Django', 'FastAPI', 'Flask', 'GraphQL'],
-     frontend: ['Flutter', 'React.js', 'Svelte', 'Web3 UI libraries'],
-     databases: ['PostgreSQL', 'MongoDB', 'MySQL', 'IPFS'],
-     devTools: ['Git', 'Docker', 'Hardhat', 'Foundry', 'Truffle', 'Postman',],
-     "AI/Ml": ['TensorFlow', 'PyTorch', 'Scikit-learn', 'GNN', 'VAE', "NSGA-III", 'XGBoost', 'SHAP', "Reinforcement Learning"],
+     languages: ['Python', 'JavaScript', 'TypeScript', 'Go', 'Rust', 'SQL', 'C#', 'HTML', 'CSS'],
+     blockchain: ['Solidity', 'EVM', 'Web3.js', 'Ethers.js', 'Wagmi', 'Hyperledger', 'OpenZeppelin', 'ERC Contracts'],
+     backend: ['Node.js (Express)', 'Django', 'FastAPI', 'ASP.NET'],
+     frontend: ['Flutter', 'React.js', 'Svelte'],
+     databases: ['PostgreSQL', 'MongoDB', 'IPFS'],
+     devTools: ['Git', 'Docker', 'Hardhat', 'Foundry', 'Truffle', 'Postman', , 'Playwright'],
    };
    resumeData.experience = [
       {
