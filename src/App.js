@@ -136,6 +136,16 @@ const resumeData = {
       technologies: ['Flutter', 'Node.js', 'Firebase'],
       description: 'A mobile chat platform with real-time messaging in geofenced zones. Reduced query latency by 60% with a custom Node.js backend.'
     },
+    {
+      name: 'Elqen - Decentralized ROSCA System',
+      technologies: ['Solidity', 'React', 'TypeScript', 'EVM'],
+      description: 'Smart contracts for automated group savings, enforcing trustless fund cycles, with a React dApp for secure user interactions.'
+    },
+    {
+      name: 'sustAIn: AI for Sustainable Materials',
+      technologies: ['GNN', 'VAE', 'NSGA-III'],
+      description: 'A framework for predicting and optimizing sustainable material compositions using GNN/VAE models, achieving multi-objective optimization.'
+    },
   ],
 };
 
