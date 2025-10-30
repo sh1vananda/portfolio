@@ -10,3 +10,26 @@
 .animate-fade-in {
   animation: fadeIn 0.5s ease-in-out;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: theme('colors.zinc.900');
+}
+
+::-webkit-scrollbar-thumb {
+  background: theme('colors.zinc.700');
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.zinc.600');
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: theme('colors.zinc.700') theme('colors.zinc.900');
+}
