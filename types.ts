@@ -14,6 +14,7 @@ export interface Project {
   name: string;
   technologies: string[];
   description: string;
+  link: string;
 }
 
 export interface Skills {
