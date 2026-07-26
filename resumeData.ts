@@ -7,9 +7,9 @@ import { ResumeData } from "./types";
 
 export const resumeData: ResumeData = {
   name: "Shivananda Reddy Kankanala",
-  title: "Full-Stack Developer",
+  title: "Software Engineer | AI & Systems",
   summary:
-    "Versatile Full-Stack Developer with experience building robust and scalable applications. Proficient across the stack, from crafting responsive frontends in React to engineering efficient backends in Node.js, ASP.NET, Go, and Rust. Passionate about clean code, performance optimization, and creating seamless user experiences.",
+    "Software Engineer specializing in high-performance desktop applications, low-level systems programming, edge architectures, and local AI agent integration. Proficient across Rust, Zig, Python, TypeScript, and Go.",
   contact: {
     email: "shivanandareddy.kankanala@gmail.com",
     linkedin: "https://www.linkedin.com/in/shivananda-reddy-kankanala/",
@@ -18,147 +18,249 @@ export const resumeData: ResumeData = {
   skills: {
     languages: [
       "Python",
-      "JavaScript",
       "Rust",
-      "Solidity",
+      "TypeScript",
+      "Go",
+      "Zig",
       "SQL",
+      "x86 Assembly",
+      "Solidity",
       "C#",
       "Dart",
-      "Go",
     ],
-    backend: ["Node.js (Express)", "Django", "ASP.NET"],
-    frontend: ["React.js", "Svelte", "HTML5", "Tailwind"],
-    databases: ["PostgreSQL", "MySQL", "Firebase"],
-    cloudDevOps: ["Git", "Docker", "Postman", "Playwright"],
+    ai: [
+      "Agentic Workflows",
+      "Local LLMs",
+      "Context Engineering",
+      "Tool Calling",
+      "RAG Pipelines",
+    ],
+    systems: [
+      "Multithreading",
+      "Concurrency",
+      "Process Isolation",
+      "IPC",
+      "WebAssembly",
+      "REST APIs",
+      "Cron Automation",
+    ],
+    frameworks: [
+      "FastAPI",
+      "React",
+      "Next.js",
+      "Node.js",
+      "Tauri",
+      "Svelte",
+      "TailwindCSS",
+      "Flutter",
+    ],
+    databasesInfra: [
+      "Cloudflare Workers",
+      "Workers KV",
+      "PostgreSQL",
+      "MongoDB",
+      "MySQL",
+      "Docker",
+      "Git",
+      "Linux",
+    ],
   },
   experience: [
     {
+      company: "Volkswagen Group Digital Solutions",
+      position: "Software Engineer Trainee",
+      duration: "Nov 2025 – Present",
+      description:
+        "Developing enterprise full-stack software and backend API microservices in Python and TypeScript. Participating in system architecture design, automated testing pipelines, and agile software delivery.",
+    },
+    {
       company: "Altibbe Health Pvt. Ltd.",
-      position: "Full Stack Blockchain Developer",
+      position: "Full Stack Blockchain Developer Intern",
       duration: "May 2025",
       description:
-        "Engineered gas-efficient Solidity smart contracts and a corresponding on-chain audit system to enable tamper-proof, transparent certification. I also built a secure Node.js API gateway to integrate this real-time blockchain logic with legacy infrastructure, serving as the sole blockchain specialist on the project.",
+        "Engineered gas-efficient Solidity smart contracts and an on-chain audit system for tamper-proof certification. Built a Node.js API gateway to integrate real-time blockchain logic with legacy infrastructure.",
     },
     {
       company: "TimeSlotter Technologies",
       position: "Frontend Developer Intern",
       duration: "Oct 2024 – Dec 2024",
       description:
-        "My primary focus was on front-end excellence, performing rigorous UI testing to achieve 98% design fidelity from Figma mockups. I implemented robust error handling for over ten REST APIs, which was critical in maintaining 99.9% system uptime, and optimized application performance by refactoring the widget tree to reduce CPU usage by 40%.",
+        "Delivered Flutter UIs from Figma with 98% design match and reduced CPU usage by 40% through state tree refactoring. Integrated 10+ REST APIs using Dio, maintaining 99.9% uptime.",
     },
     {
       company: "Flixdin",
       position: "Full Stack Developer Intern",
       duration: "May 2024 – July 2024",
       description:
-        "In a fast-paced Agile environment, I improved application stability, leading to a 22% reduction in the crash rate. My focus on quality involved writing and executing unit tests for API integrations, successfully cutting pre-release integration bugs by 30% while collaborating in sprints to review code and deliver features.",
+        "Enhanced Android app features in Kotlin, cutting pre-release integration bugs by 30% through unit testing and automated QA pipelines.",
     },
   ],
   projects: [
     {
+      name: "AI Task Planner",
+      technologies: [
+        "Cloudflare Workers",
+        "Workers AI",
+        "Workers KV",
+        "Google Tasks API",
+      ],
+      description:
+        "Autonomous edge planner syncing AI-generated tasks to Google Tasks, backed by KV state and idempotency.",
+      link: "https://github.com/sh1vananda/ai-task-planner",
+    },
+    {
+      name: "Cargo Space",
+      technologies: ["Rust", "Rayon", "Tokio", "Local LLMs"],
+      description:
+        "Multi-threaded disk usage analyzer built with Rayon for sub-second directory scanning. Integrates local AI models to process natural language file queries and generate storage cleanup plans.",
+      link: "https://github.com/sh1vananda/cargo-space",
+    },
+    {
+      name: "Nebula",
+      technologies: ["Zig", "CUDA", "C ABI", "Win32 API"],
+      description:
+        "Procedural path tracer featuring BVH acceleration, custom PNG encoding, and dynamic CUDA kernel bindings. Integrates with Windows desktop APIs for automated background generation.",
+      link: "https://github.com/sh1vananda/nebula",
+    },
+    {
+      name: "Sclerite",
+      technologies: ["Rust", "WebAssembly", "Cloudflare Workers", "React"],
+      description:
+        "Edge-native image watermarking engine compiled to WebAssembly. Executes direct RGBA buffer manipulation for sub-10ms layout compositing, paired with a React client for live previews.",
+      link: "https://github.com/sh1vananda/sclerite",
+    },
+    {
+      name: "GUR Engine",
+      technologies: ["Rust", "WGPU", "Custom ECS"],
+      description:
+        "Custom 2D game engine built in Rust. Features proprietary rendering pipelines, an Entity Component System (ECS), spatial indexing, and native physics integration.",
+      link: "https://github.com/sh1vananda/gur-engine",
+    },
+    {
+      name: "Goo",
+      technologies: ["Rust", "Tauri", "React", "TypeScript"],
+      description:
+        "Cross-platform media tracker daemon. Implements deterministic regex pipelines for log parsing, local JSON caching, and secure OS keyring integration.",
+      link: "https://github.com/sh1vananda/goo",
+    },
+    {
+      name: "Project Leach",
+      technologies: ["Next.js", "TypeScript", "Web Workers"],
+      description:
+        "Stateless CMS architecture that encodes compressed document payloads directly into URL routes, utilizing edge computing for distributed content persistence.",
+      link: "https://github.com/sh1vananda/project-leach",
+    },
+    {
+      name: "LiteERP",
+      technologies: ["Python", "FastAPI", "React", "PostgreSQL"],
+      description:
+        "Modular ERP engine built with a zero-abstraction backend. Features low-overhead routing, strict transactional boundaries, and real-time state synchronization.",
+      link: "https://github.com/sh1vananda/lite-erp",
+    },
+    {
+      name: "sustAIn",
+      technologies: ["Python", "PyTorch", "GNN", "VAE", "NSGA-III"],
+      description:
+        "Deep learning framework combining Graph Neural Networks and VAEs to generate sustainable material compositions. Uses multi-objective evolutionary algorithms to optimize cost and performance.",
+      link: "https://github.com/sh1vananda/sustain",
+    },
+    {
       name: "Rust Microkernel",
       technologies: ["Rust", "x86 Assembly"],
       description:
-        "A capability-based microkernel for x86 with memory safety, featuring fast message-passing IPC and an optimized cache-friendly memory layout.",
+        "Capability-based x86 microkernel featuring hardware memory protection, strict process isolation, and zero-copy lock-free IPC primitives.",
       link: "https://github.com/sh1vananda/rust-microkernel",
     },
     {
       name: "Path Tracer",
       technologies: ["Rust"],
       description:
-        "A Monte Carlo physically-based renderer with global illumination and parallelized rendering for high-fidelity image synthesis.",
+        "Monte Carlo physically-based renderer featuring global illumination, bounding volume hierarchies, and parallelized execution.",
       link: "https://github.com/sh1vananda/rust-path-tracer",
     },
     {
       name: "ls-pro",
       technologies: ["Rust"],
       description:
-        "A modern, feature-rich replacement for the classic `ls` command, with features like Git integration and smart ignoring for a developer-friendly experience.",
+        "Feature-rich Rust replacement for the ls command. Includes Git status integration, smart ignoring, and performance-optimized filesystem traversal.",
       link: "https://github.com/sh1vananda/ls-pro",
-    },
-    {
-      name: "Cargo Space",
-      technologies: ["Rust"],
-      description:
-        "A fast disk usage analyzer with parallel scanning and integrated local LLM support via Ollama API for AI-driven storage insights.",
-      link: "https://github.com/sh1vananda/cargo-space",
     },
     {
       name: "Sync-cli",
       technologies: ["Go"],
       description:
-        "A cross-platform CLI tool that automates synchronization of package manifests, reducing configuration time from hours to minutes.",
+        "Cross-platform Go CLI that automates the generation and synchronization of package manifests across disparate package managers.",
       link: "https://github.com/sh1vananda/sync-cli",
     },
     {
       name: "Local Network Pastebin",
-      technologies: ["Go"],
+      technologies: ["Go", "JavaScript"],
       description:
-        "A lightweight, secure pastebin service for local networks with both web and CLI interfaces, enabling ephemeral code sharing in controlled environments.",
+        "Secure LAN-only pastebin service featuring an in-memory database, time-based expiration, and dual CLI/Web interfaces.",
       link: "https://github.com/sh1vananda/pastebin",
     },
     {
-      name: "Voice Diary",
-      technologies: ["Next.js", "TypeScript", "Ollama"],
+      name: "HCMS",
+      technologies: ["SvelteKit", "TypeScript", "Supabase", "PostgreSQL"],
       description:
-        "A web-based voice journaling app with real-time speech recognition, AI-powered text processing, and local-first data storage for privacy.",
+        "Self-hosted headless CMS built on PostgreSQL. Features role-based authentication, Row Level Security, and a modular RESTful content API.",
+      link: "https://github.com/sh1vananda/hcms",
+    },
+    {
+      name: "Voice Diary",
+      technologies: ["Next.js", "TypeScript", "Local LLMs", "Web Speech API"],
+      description:
+        "Privacy-first web application combining client-side speech recognition with local AI text processing and offline-first storage.",
       link: "https://github.com/sh1vananda/voice-diary",
+    },
+    {
+      name: "Godrotted",
+      technologies: ["React", "Next.js", "TypeScript", "Sanity.io"],
+      description:
+        "Static review platform driven by custom content schemas, featuring a vector-based recommendation engine and a highly custom scroll-linked UI.",
+      link: "https://godrotted.vercel.app",
+    },
+    {
+      name: "Wiki Deck",
+      technologies: ["HTMX", "Python", "Flask", "JavaScript"],
+      description:
+        "Server-driven web application rendering immersive, swipeable Wikipedia discovery feeds using HTMX and minimal client-side JavaScript.",
+      link: "https://github.com/sh1vananda/wiki-deck",
     },
     {
       name: "Do Doing Done",
       technologies: ["JavaScript", "Socket.io", "Flask"],
       description:
-        "A real-time collaborative task management application with a Kanban-style interface for seamless team-based project tracking.",
+        "Collaborative task management platform and browser extension using WebSockets for real-time Kanban board synchronization.",
       link: "https://github.com/sh1vananda/do-doing-done",
-    },
-    {
-      name: "Wiki Deck",
-      technologies: ["HTMX", "JavaScript", "Python"],
-      description:
-        "An immersive, swipeable deck for discovering random Wikipedia articles, showcasing a fast, server-driven UI built with HTMX.",
-      link: "https://github.com/sh1vananda/wiki-deck",
     },
     {
       name: "Atra",
       technologies: ["Next.js", "Firebase"],
       description:
-        "A multi-tenant loyalty system with QR-based point collection, redemption, and a unified wallet, including business-facing analytics dashboards.",
+        "Multi-tenant loyalty system supporting QR-based point transactions, unified digital wallets, and business analytics dashboards.",
       link: "https://github.com/sh1vananda/atra",
     },
     {
-      name: "Movie Reviews",
-      technologies: ["React", "Next.js", "Sanity.io"],
-      description:
-        "A static review system with custom content schemas, a vector-based recommendation engine, and automated deployment pipelines.",
-      link: "https://godrotted.vercel.app",
-    },
-    {
       name: "Hyperlocal Chat Application",
-      technologies: ["Flutter", "Node.js", "Firebase"],
+      technologies: ["Flutter", "Node.js", "Firebase", "Uber-H3"],
       description:
-        "A mobile chat platform with real-time messaging in geofenced zones. Reduced query latency by 60% with a custom Node.js backend.",
+        "Geofenced real-time mobile chat platform utilizing Uber H3 spatial indexing to optimize backend geospatial queries.",
       link: "https://github.com/sh1vananda/kiwi-hyperlocal-chat",
     },
     {
       name: "Elqen - Decentralized ROSCA System",
-      technologies: ["Solidity", "React", "TypeScript", "EVM"],
+      technologies: ["Solidity", "React", "TypeScript", "OpenZeppelin"],
       description:
-        "Smart contracts for automated group savings, enforcing trustless fund cycles, with a React dApp for secure user interactions.",
+        "EVM smart contracts enforcing trustless fund cycles for group savings, integrated with a secure React Web3 interface.",
       link: "https://github.com/sh1vananda/elqen",
     },
     {
       name: "PCOS-Predict",
-      technologies: ["Python", "Keras", "TensorFlow", "Scikit-learn", "SMOTE"],
+      technologies: ["Python", "TensorFlow", "Scikit-Learn"],
       description:
-        "PCOS prediction using 44 clinical features, balanced with SMOTE and tested across 12 models. Reached 98% accuracy and perfect recall in 5-fold validation.",
-      link: "",
-    },
-    {
-      name: "sustAIn",
-      technologies: ["GNN", "VAE", "NSGA-III"],
-      description:
-        "A framework for predicting and optimizing sustainable material compositions using GNN/VAE models, achieving multi-objective optimization.",
-      link: "",
+        "Diagnostic classification pipeline evaluating clinical features with SMOTE balancing to achieve high-accuracy predictive modeling.",
+      link: "https://github.com/sh1vananda/pcos-predict",
     },
   ],
 };

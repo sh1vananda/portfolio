@@ -19,10 +19,10 @@ export interface Project {
 
 export interface Skills {
   languages: string[];
-  backend: string[];
-  frontend: string[];
-  databases: string[];
-  cloudDevOps: string[];
+  ai: string[];
+  systems: string[];
+  frameworks: string[];
+  databasesInfra: string[];
 }
 
 export interface Contact {

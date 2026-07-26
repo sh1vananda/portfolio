@@ -250,7 +250,7 @@ const App: React.FC = () => {
               href={`mailto:${resumeData.contact.email}`}
               className="text-xs font-mono text-neutral-500 hover:text-white transition-colors flex items-center gap-2"
             >
-              INITIATE_CONTACT <ArrowRight className="w-3 h-3" />
+              CONTACT <ArrowRight className="w-3 h-3" />
             </a>
           </div>
         </footer>
