@@ -207,7 +207,7 @@ const App: React.FC = () => {
                   {category.replace(/([A-Z])/g, " $1").trim()}
                 </h3>
                 <div className="flex flex-wrap gap-x-3 gap-y-2">
-                  {items.map((skill, j) => (
+                  {items.map((skill: string, j: number) => (
                     <span
                       key={j}
                       className="text-sm text-neutral-500 hover:text-neutral-300 transition-colors cursor-default"
